@@ -1,0 +1,51 @@
+{
+  "name": "js-jest-pkg-starter",
+  "version": "0.0.1",
+  "description": "For those of you who wanted to create a quick, simple npm package in Javascript.",
+  "keywords": [
+    "javascript",
+    "jest",
+    "travis",
+    "coveralls",
+    "npm",
+    "boilerplate",
+    "starter"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "rimraf dist && babel -p minify -d dist src",
+    "test": "jest",
+    "test:ci": "jest --ci --coverage && cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint -c .eslintrc.js --fix --ignore-path .gitignore .",
+    "preversion": "npm run lint && npm run test",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "author": "https://github.com/briwa",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.3.4",
+    "@babel/preset-env": "7.3.4",
+    "@babel/cli": "7.0.0",
+    "babel-jest": "24.1.0",
+    "coveralls": "3.0.3",
+    "eslint": "5.15.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "jest": "24.1.0",
+    "rimraf": "2.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briwa/ts-jest-pkg-starter.git"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
