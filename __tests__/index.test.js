@@ -7,4 +7,11 @@ describe('Hello world', () => {
       expect(instance.greet()).toBe('Hello World!')
     })
   })
+
+  describe('When greetInSpanish() is called', () => {
+    test('Should return \'Hola Mundo\'', () => {
+      const instance = new HelloWorld()
+      expect(instance.greetInSpanish()).toBe('Hola Mundo!')
+    })
+  })
 })
