@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/briwa/ts-jest-pkg-starter.git"
+    "url": "git+https://github.com/briwa/js-jest-pkg-starter.git"
   },
   "engines": {
     "node": ">=10"
