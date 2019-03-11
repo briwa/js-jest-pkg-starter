@@ -1,6 +1,6 @@
 # js-jest-pkg-starter
 [![npm](https://img.shields.io/npm/v/js-jest-pkg-starter.svg)](https://www.npmjs.com/package/js-jest-pkg-starter)
-[![Build Status](https://travis-ci.org/briwa/js-jest-pkg-starter.svg?branch=master)](https://travis-ci.org/briwa/js-jest-pkg-starter)
+[![Build Status](https://travis-ci.com/briwa/js-jest-pkg-starter.svg?branch=master)](https://travis-ci.com/briwa/js-jest-pkg-starter)
 [![Coverage Status](https://coveralls.io/repos/github/briwa/js-jest-pkg-starter/badge.svg?branch=master)](https://coveralls.io/github/briwa/js-jest-pkg-starter?branch=master)
 
 
